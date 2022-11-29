@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hangman</title>
 </head>
 <body>
-    <div>
-         
+    <div class="title1">
+         <h1>Bienvenue sur notre jeu du Pendu version web !</h1>
+    </div>
+    <div class="title2">
+        <h3>Votre pseudonyme</h3>
+    </div>
+    <div class="text">
+        <form method="post">
+            <input type="text" name="nickname"><br/>
+        </form>
+    </div>
+    <div class="difficulties">
+        <form>
+            <input type="radio" name="choices" id="Facile">
+            <label for="Facile">Facile</label>
+            <input type="radio" name="choices" id="Normal">
+            <label for="Normal">Normal</label>
+            <input type="radio" name="choices" id="Difficile">
+            <label for="Difficile">Difficile</label>
+        </form>
+    </div>
+    <div class="button1">
+        <button>
+            <a href="../HANGMAN_WEB_OUDIN_KOJOK-TARRAF/idCard.HTML" class="button2">Commencer à jouer !</a>
+        </button>
     </div>
     
 </body>
