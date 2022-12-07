@@ -6,7 +6,8 @@ import (
 	"text/template"
 )
 
-type Hangman struct {
+type Choices struct {
+	Choix int
 }
 
 func main() {
