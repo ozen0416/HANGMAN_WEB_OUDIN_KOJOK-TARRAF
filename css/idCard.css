@@ -10,5 +10,107 @@
 
 body{
     font-family: 'NerkoOne';
-    background-color: rgb(108, 100, 100);    
+    background-image: url(../css/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+div button{
+    display: flex;
+    font-size:15px;
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin:5px;
+    text-align: center;
+    border-radius: 5px 10px 15px 20px;
+}
+
+button {
+    text-decoration: none;
+    font-family: 'NerkoOne';
+}
+
+.PlayAgain3 {
+    text-decoration: none;
+    color: black;
+}
+
+.PlayAgain {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+}
+
+.PlayAgain2 {
+    transition: 0.4s;
+    background-color: rgb(227, 96, 170);
+}
+
+.PlayAgain2:hover{
+    background-color: rgb(185, 78, 139);
+}
+
+div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.try {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+.letter {
+    margin: 3px;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.submit {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+.placeholder {
+    width: 300px;
+    font-family: 'NerkoOne';
+    height: 30px;
+    text-align: center;
+}
+
+.send {
+    font-family: 'NerkoOne';
+    width: 150px;
+    height: 30px;
+    transition: 0.4s;
+    background-color: rgb(227, 96, 170);
+}
+
+.send:hover {
+    background-color: rgb(185, 78, 139);
+}
+
+.word {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 100px;
+    text-transform: uppercase;
+    
 }

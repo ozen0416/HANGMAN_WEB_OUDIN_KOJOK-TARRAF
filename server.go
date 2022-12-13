@@ -10,6 +10,8 @@ type Choices struct {
 	Choix int
 }
 
+type 
+
 func main() {
 
 	fs := http.FileServer(http.Dir("css"))
@@ -22,6 +24,13 @@ func main() {
 
 		tmpl.Execute(w, data)
 	})
+
+	http.HandleFunc("/idCard", func(w http.ResponseWriter, r *http.Request) {
+
+
+		
+		tmpl.Execute(w, data)
+	}
 	http.ListenAndServe(":80", nil)
 
 }
