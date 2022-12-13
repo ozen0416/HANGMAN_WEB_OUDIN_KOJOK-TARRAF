@@ -15,6 +15,10 @@ body{
     background-position: 100%;
 }
 
+.name {
+    font-size: 50px;
+}
+
 div button{
     display: flex;
     font-size:15px;

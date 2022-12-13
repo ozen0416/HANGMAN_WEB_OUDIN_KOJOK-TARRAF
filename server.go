@@ -1,16 +1,21 @@
 package main
 
 import (
-	"hmtl/template"
+	"html/template"
 	"net/http"
 	"text/template"
 )
 
-type Choices struct {
-	Choix int
+type User struct {
+	Name    string
+	Success bool
 }
 
-type 
+type Choices struct {
+	Facile    string
+	Normal    string
+	Difficile string
+}
 
 func main() {
 
@@ -20,17 +25,17 @@ func main() {
 	tmpl := template.Must(template.ParseFiles("index.html"))
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		data := Hangman
-
-		tmpl.Execute(w, data)
+		if r.Method != http.MethodPost {
+			tmpl.Execute(w, nil)
+			return
+		}
+		details := User{
+			Name:    r.FormValue("username"),
+			Success: true,
+		}
+		tmpl.Execute(w, details)
 	})
 
-	http.HandleFunc("/idCard", func(w http.ResponseWriter, r *http.Request) {
-
-
-		
-		tmpl.Execute(w, data)
-	}
 	http.ListenAndServe(":80", nil)
 
 }
