@@ -1,4 +1,4 @@
-module hangman-web
+module github.com/ozen0416/HANGMAN_WEB_OUDIN_KOJOK-TARRAF
 
 go 1.19
 
